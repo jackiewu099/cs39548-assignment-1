@@ -107,7 +107,7 @@ main, .main, .animal-main {
   flex: 1 0 auto;            
 } 
 
-.hero--main, .hero--alpaca, .hero--pallas {
+.hero--main, .hero--alpaca, .hero--pallas, .hero--hamdarya {
   height: 60vh;
   background-size: cover;
   background-position: center;
@@ -125,6 +125,10 @@ main, .main, .animal-main {
 
 .hero--pallas {
   background-image: url('../img/pallascat1.jpg');
+}
+
+.hero--hamdarya {
+  background-image: url('../img/hamadrya.jpeg');
 }
 
 .animal-main  {
