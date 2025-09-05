@@ -61,13 +61,16 @@
   z-index: 999;  
 }
 
-.navbar-secondary__logo {
-  color: #fff;
-  font-size: 1.2rem;
+.navbar-secondary__logo a {
+  text-decoration: none;
+  color: white;
   font-weight: bold;
+  font-size: 1.2rem;
   letter-spacing: 1px;
   text-transform: uppercase;
 }
+
+
 
 .navbar-secondary__menu {
   display: flex;  
@@ -96,9 +99,15 @@
 
 body, html {
   margin: 0;
-  padding: 0;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  display:flex;
+  flex-direction: column;
+  min-height: 100dvh;
 }
+
+main, .main, .animal-main {
+  flex: 1 0 auto;            
+} 
 
 .hero {
   height: 60vh;
@@ -107,6 +116,12 @@ body, html {
   background-position: center;
   box-sizing: border-box;
   position: relative;
+}
+
+/* Add margin to main to prevent overlap with fixed navbars */
+.animal-main  {
+  margin: 0;
+  padding-top: 85px;
 }
 
 .main__header {
@@ -161,7 +176,8 @@ body, html {
     justify-content: center;
     gap: 5px;               
     max-width: 100%;
-    margin-top: 30px;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 .main__image {
@@ -174,9 +190,10 @@ body, html {
 }
 
 .footer {
-  margin-top: 50px;
+  margin-top: auto;            
   padding: 20px 0; 
   background-color: #272525; 
+  flex-shrink: 0;   
 }
 
 .footer__nav {
@@ -199,3 +216,56 @@ body, html {
     font-weight: bold;
     text-transform: uppercase;
 }
+.animal--main__header {
+  text-align: center;
+  padding: 35px 0 35px;
+  margin: 0;
+  letter-spacing: 4px;
+  font-size: 3.5rem;
+  color: green;
+}
+.animal--main__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+.animal--main__container__card {
+  display: block;
+  width: 350px;
+  text-decoration: none;
+  border-radius: 1px;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.main__container__card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+.animal--main__container__card img {
+  width: 100%;
+  display: block;
+}
+
+.main__container__card__text {
+  text-decoration: none;;
+  padding: 10px;
+  text-align: center;
+}
+
+.main__container__card__text h3 {
+  color: teal;
+  font-size: 20px;
+  margin: 5px;
+}
+
+.main__container__card__text p {
+  color: black;
+  font-size: 14px;
+  margin: 9px;
+}
+
