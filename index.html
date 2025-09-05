@@ -1,14 +1,57 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Johnny's Zoo</title>
-    <link rel="stylesheet" type="text/css" href="css/index.css">
-  </head>
-  <body>
-    <h1>Welcome to Johnny's Zoo</h1>
-    <h3>See the animals at the zoo:</h3>
-    <div class="link">
-      <a href="polar-bear.html">Polar Bear</a>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Zoo</title>
+  <link rel="stylesheet" href="css/index.css">
+  <script src="index.js" defer></script>
+</head>
+<body>
+  <div class= "hero">
+    <header class= "header">
+      <nav class= "navbar">
+        <ul class= "navbar__menu">
+          <li><a href="#donate" class="btn btn--donate">Donate</a></li>
+          <li><a href="#membership" class="btn btn--membership">Membership</a></li>
+          <li><a href="#tickets" class="btn btn--tickets">Buy Tickets</a></li>
+        </ul>
+      </nav>
+      <nav class="navbar-secondary">
+        <div class="navbar-secondary__logo">Assignment One Zoo</div>
+        <ul class="navbar-secondary__menu">
+          <li><a href="#things" class="btn btn--things">Things to Do</a></li>
+          <li><a href="#plan" class ="btn btn--plan">Plan Your Visit</a></li>
+          <li><a href="animals.html" class ="btn btn--animals">Animals</a></li>
+          <li><a href="#learn" class = "btn btn--learn">Learn</a></li>
+        </ul>
+      </nav>
+    </header>
+  </div>
+  <main class = "main">
+    <h1 class="main__header">ASSIGNMENT ONE ZOO</h1>
+    <h2 class="main__secondheader">ANIMALS</h2>
+    <div class="main__animal__introduction">
+        <p>Bring your family to watch a family of Hamadryas baboons, or explore the barn and garden for a day on the farm in the zoo! Plan a visit to see your favorite member of the animal kingdom and meet some new ones along the way! </p>
     </div>
-  </body>
+    <div class="main__animal__button">
+        <a href="animals.html" class="btn btn--animals">View Our Animals</a>
+    </div>
+    <div class = "main__image__container">
+        <img src="img/dartfrog.jpg" alt="Dart Frog" class="main__image">
+        <img src="img/hornbill.jpg" alt="Hornbill" class="main__image">
+        <img src="img/SandCat.jpg" alt="Sand Cat" class="main__image">
+        <img src="img/turtle.jpg" alt="Turtle" class="main__image">
+    </div>
+  </main>
+  <footer class = "footer">
+    <nav class = "footer__nav">
+      <ul class="footer__menu">
+        <li><a href="#contact" class="btn btn--contact">Contact Us</a></li>
+        <li><a href="#about" class="btn btn--about">About Us</a></li>
+        <li><a href="#privacy" class="btn btn--privacy">Privacy Policy</a></li>
+        <li><a href="#terms" class="btn btn--terms">Terms of Service</a></li>
+      </ul>
+   </footer>
+</body>
 </html>
