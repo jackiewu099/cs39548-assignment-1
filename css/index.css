@@ -107,25 +107,26 @@ main, .main, .animal-main {
   flex: 1 0 auto;            
 } 
 
-.hero--main{
+.hero--main, .hero--alpaca, .hero--pallas {
   height: 60vh;
-  background-image: url('../img/redpanda.jpg');
   background-size: cover;
   background-position: center;
   box-sizing: border-box;
   position: relative;
+}
+
+.hero--main {
+  background-image: url('../img/redpanda.jpg');
 }
 
 .hero--alpaca {
   background-image: url('../img/alpaca1.jpg');
-  height: 60vh;
-  background-size: cover;
-  background-position: center;
-  box-sizing: border-box;
-  position: relative;
 }
 
-/* Add margin to main to prevent overlap with fixed navbars */
+.hero--pallas {
+  background-image: url('../img/pallascat1.jpg');
+}
+
 .animal-main  {
   margin: 0;
   padding-top: 85px;
