@@ -2,7 +2,7 @@
 
 This repository is the starter code for Assignment 1 - Zoo.
 
-### Live Link
+### Live Link (Github Pages)
 [Website link](https://jackiewu099.github.io/cs39548-assignment-1/)
 
 ----------
